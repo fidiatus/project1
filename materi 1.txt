@@ -1,0 +1,27 @@
+Assalamualaikum, 
+berikut Materi ke-1 pada hari selasa,2 Februari 2017 : Software Development Life Cycle (Agile Development / Extreme Programming)
+
+SDLC (Software Development Life Cycle) Adalah Siklus hidup pengembangan sistem yang terdapat didalam Rekayasa Perangkat Lunak yang berfungsi untuk melakukan proses pembuatan maupun perubahan sistem dari sebuah aplikasi.
+dalam melakukan SDLC, kita harus melalui 3 tahap,yaitu :
+1. Analisa
+a. problem Detection(mencari Permasalahan) : cari permasalahan penghalang sostem tidak dapat digunakan secara maksimal.
+b. Initial Investigation(Penyelidikan Awal) : pemeriksaan sistem secara menyeluruh agar tidak ada masalah.
+c. Requerements Analysis(Syarat Awal Anaisis) : persetujuan yang dilakukan agar perubahan yang dilakukan apakah menyeuruh atau hanya pada permaslahan.
+2. Design SDLC (desain layout )
+a. Output : merancang bentuk laporan untuk system yang baru berdasarkan system yang telah ada.
+b. Input : merancang bentuk dokumen masukan dan rancangan layar(Desktop)
+c. File : melakukan perancangan submenu(form)
+3. Imlementasi SDLC
+a. Programming and Testing : proses Developing ini dilakukan oleh Developer(Programmer) dan testing dilakukan oleh analis system.
+b. Training and other : melakukan persiapan training system dan pembutan manual book untuk pengenalan system baru.
+c. System Change Over : perubahan system lama ke system baru dan akan upragrade untuk tahap berikutnya.
+
+Dalam dunia rekayasa perangkat lunak terdapat empat buah metodologi dalam menerapkan SLDC, yakni :
+a. Waterfall Development Methodology : cara pengembangan software dengan melalui fase secara berurutan
+b. Parallel Development Methodology : car pengembangan software pada SLDC  secara Paralel sehingga meminimalisasi waktu penjadwalan.  
+c. Rapid Application Development : cara pengembngan ini dilakukan setelah dilakukan persetujuan dengan costumer.
+d.  Agile Development: Extreme Programming : proses ini yaitu pembuatan perangkat lunak secara cepat sehingga tidak ada perubahan tak tentu pada system.
+
+
+
+

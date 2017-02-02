@@ -1,0 +1,37 @@
+selasa,2 Februari 2017.
+Assalamualaikum,
+Berikut Langkah Penggunaan GIT Pada Windows
+
+Sebelum menggunakan GIT, lakukan langkah berikut :
+1. Lakukan Insallasi software dimana software tersebut dapat diperoleh dari www.git-scm.com
+2. Lakukan daftar akun di www.gitlab.com (jika belum memiliki).
+     ------------------Repositori-------------
+3. Buat direktori pada komputer lalu isi dengan sebuah direktori bru, yang saya buat direktori di komputer ada di E:\repositori\contoh-repositori
+4. buka CMD ,lalu masuk ke direktori yang telah dibuat tadi dengan langkah berikut :
+# cd repositori  --> untuk masuk ke repositori
+# cd contoh-repositori  --> masuk ke contoh-repositori
+    --------------------Git-------------------------
+5. ketikkan git init pada commandPrompt, maka akan dibuat secara otomatis folder tersebut telah terinisialisasi di E:/repositori/contoh-repositori/.git/.
+6.  jika diperiksa di komputer maka tidak akan menemukan isi apapun,karena fungsinya sendiri yaitu mensetting agar folder tersebut beserta isinya dapat di kotrol
+7. kemudian ketikkan " git status" pada cmd untuk melihat status file dalam folder
+8. setelah itu mulai buat sebuah file.txt di dalam direktori contoh-repositori dengan code "git add *.txt""
+9. lalu ketikkan git status kembali untuk melihat apakah folder tersebut telah masuk atau tidak. proses ini melakukan transfer file dari status unstage ke stage file
+10. untuk mentransfer file dalam jumlah banyak cukup ketikkan "git add *.*"
+11. jika file yang dimasukkan ingin di kluarkan dari stage file ketikkan " git rm --cached <namaFile>
+      ----------------Commit-------------------
+12. lakukan penambahan commit dengan kata "1. file baru ditambahkan" dengan cara ketikkan di cmd " git commit -m "1. file baru ditambah"",namun disini saya mengalami kendala dimana project saya tidak dapat di commit
+13. jika telah bisa di commit maka dapat ditampilkan dengan cara ketikkan " git log",maka berkas telah di commit ke HEAD nmun belum di deporsito jarak jauh.
+     -----------------HEAD----------------------
+14. file yang telah berada di deposito HEAD kirim ke repositori jarak jauh dengan code "git push origin master" (Master merupakan folder tujuan dalam jarak jauh)
+15. untuk menghubungkannya gunakan code "git remote add origin<server>" -> berlaku jika depositori yang ada belum ada kloning.
+    -----------------Percabangan---------------------
+16. buat cabang baru dengan code " git checkout -b fitur_x" --> fitur_x adalah nama cabang yang diberikan
+17. kembali ke master dengan code " git checkout master"
+18. hapus cabang yang telah dibuat sebelumnya dengan code " git branch -d fitur_x"  --> satu cabang tidak akan terbuka untuk yang lainnya kecuali mengirimkan ke deporsitosi jarak jauh.
+19. jika buka dengan deporsitosi jarak jauh gunakan code "git push origin <cabang>"
+    -----------------Perbaruan------------------
+20. perbaharui repositosi ke commit terbaru dengan code "git pull"
+21.  untuk menggabungkan dan mengambil data jarak jauh gunakan code " git merge <cabang>"
+22. sebelum melakukan penggbungan lakukan peninjauan dengan code " git tiff <cabang_asal><cabang tujuan>".
+
+

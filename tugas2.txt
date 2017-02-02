@@ -1,0 +1,24 @@
+Assalamualaikum berikut Tugas ke-2 saya yaitu : GIT
+
+GIT adalah sebuah tools yg dibuat untuk pelacakan perubahan file atau dapat disebut tools VCS (Version Control System). 
+Pada umumnya GIT digunakan untuk bekerja bersama team di dalam satu source code project yg di share online.
+GIT akan sangat berguna terutama bagi programmer yang bekerja dalam tim.
+Tools ini menawarkan menulis kode bersama dalam sebuah tim secara offline lalu menyatukan source code tersebut secara online melalui metode push dan pull.
+Git memperlakukan datanya sebagai sebuah kumpulan snapshot dari sebuah miniatur sistem berkas. Setiap kali melakukan commit, atau melakukan perubahan pada proyek Git,
+pada dasarnya Git merekam gambaran keadaan berkas-berkas pada saat itu dan menyimpan referensi untuk gambaran tersebut. 
+Agar efisien, jika berkas tidak mengalami perubahan, Git tidak akan menyimpan berkas tersebut melainkan hanya pada file yang sama yang sebelumnya telah disimpan.
+
+Git memiliki 3 keadaan utama dimana berkas dapat berada: committed, modified dan staged. 
+# Committed berarti data telah tersimpan secara aman pada basisdata lokal. 
+# Modified berarti telah melakukan perubahan pada berkas namun belum melakukan commit pada basisdata. 
+# Staged berarti telah menandai berkas yang telah diubah pada versi yang sedang berlangsung untuk kemudian dilakukan commit.
+
+sebelum menggunakan GIT, lakukan langkah berikut :
+1. Lakukan Insallasi software dimana software tersebut dapat diperoleh dari www.git-scm.com
+2. Lakukan daftar akun di www.gitlab.com (jika belum memiliki)
+3. pastikan komputer yang digunakan sudah terdaftar SSH key nya di Gitlab.
+4. buat ssh key dengan cara ketik ssh-keygen di Git Bash -> enter
+5. secara otomatis akan ada file id_rsa.pub terbentuk di "C:/users/nama_user/.ssh/id_rsa.pub".
+6. login ke website Gitlab, buka menu " = " -> klik profile settings.
+7. 
+

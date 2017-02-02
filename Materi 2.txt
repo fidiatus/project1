@@ -1,0 +1,51 @@
+Assalamualaikum,
+Berikut Materi ke-2 saya yaitu : Version Control System -> GIT
+
+A. Version Control System
+Version control adalah sebuah sistem yang mencatat setiap perubahan terhadap sebuah berkas atau kumpulan berkas sehingga pada suatu saat anda dapat kembali kepada salah satu versi dari berkas tersebut
+ Tujuan system ini untuk mengembalikan berkas  pada kondisi/keadaan sebelumnya, mengembalikan seluruh proyek pada keadaan sebelumnya, membandingkan perubahan setiap saat, melihat siapa yang terakhir melakukan perubahan terbaru pada suatu objek sehingga berpotensi menimbulkan masalah,.
+Ada beberapa pengontrolan sistem yang dapat dilakukan, sebagai berikut  
+1. Version Control System Lokal
+VCS ini dikembangkan oleh berbagai VCS lokal yang memiliki sebuah basis data sederhana untuk menyimpan semua perubahan pada berkas yang berada dalam cakupan revision control.
+2. Version Control Systems Terpusat
+ Centralized Version Control Systems (CVCSs) dikembangkan karea para pengembang perlu melakukan kolaborasi dengan pengembang pada sistem lainnya.
+Dibandingkan VCS Lokal jauh lebih mudah untuk mengelola sebuah CVCS dibandingkan menangani database lokal pada setiap client.
+3. Version Control System Terdistribusi
+DVCS (seperti Git, Mercurial, Bazaar atau Darcs), klien tidak hanya melakukan checkout untuk snapshot terakhir setiap berkas, namun mereka (klien) memiliki salinan penuh dari repositori tersebut. Jadi, jika server mati, dan sistem berkolaborasi melalui server tersebut, maka klien manapun dapat mengirimkan salinan repositori tersebut kembali ke server. Setiap checkout pada DVCS merupakan sebuah backup dari keseluruhan data.
+
+B. Memulai Git pada VCST
+GIT adalah sebuah tools yg dibuat untuk pelacakan perubahan file atau dapat disebut tools VCS (Version Control System). 
+Pada umumnya GIT digunakan untuk bekerja bersama team di dalam satu source code project yg di share online.
+GIT akan sangat berguna terutama bagi programmer yang bekerja dalam tim.
+Tools ini menawarkan menulis kode bersama dalam sebuah tim secara offline lalu menyatukan source code tersebut secara online melalui metode push dan pull.
+pada dasarnya Git merekam gambaran keadaan berkas-berkas pada saat itu dan menyimpan referensi untuk gambaran tersebut. 
+Agar efisien, jika berkas tidak mengalami perubahan, Git tidak akan menyimpan berkas tersebut melainkan hanya pada file yang sama yang sebelumnya telah disimpan.
+Pada waktu sinkronisasi diperlukan, user melakukan push ke Git server dan user yang lain melakukan fetch (ambil) kemudian merge (menggabungkan) update terbaru di Git server dengan dengan repositori. Dengan kata lain, proses sinkronisasi dilakukan untuk menyamakan repositori lokal yang dimiliki oleh seorang user dengan user yang lain dengan perantara Git server. 
+Kalau kita ingin menggunakan Git bersama orang lain tanpa perlu repot membuat server sendiri, kita bisa menggunakan jasa beberapa provider antara lain: 
+#  Bitbucket ( www.bitbucket.org ) 
+#  Github (www.github.com) 
+#  Googlecode (code.google.com) 
+#  Beanstalk (www.beanstalkapp.com) 
+
+Git memiliki 3 keadaan utama dimana berkas dapat berada: committed, modified dan staged. 
+# Committed berarti data telah tersimpan secara aman pada basisdata lokal. 
+# Modified berarti telah melakukan perubahan pada berkas namun belum melakukan commit pada basisdata. 
+# Staged berarti telah menandai berkas yang telah diubah pada versi yang sedang berlangsung untuk kemudian dilakukan commit.
+
+C. Istilah Penting dalam GIT 
+1. Working Directory, yaitu  direktori di komputer kita (lokal) yang memiliki repositori. Indikasinya adalah adanya satu subdirektori bernama .git .
+2. Repositori,yaitu database yang menyimpan histori dari working copy seperti Penambahan, penghapusan, dan perubahan isi file semua direkam dalam database ini.
+3. Commit adalah kondisi working directory pada satu waktu (snapshot) yang direkam dalam histori. Snapshot terbaru yang sudah direkam dalam histori disebut HEAD commit. Commit juga berarti proses penyimpanan snapshot.
+4. Stagging Indeks, perubahan yang terjadi dalam direktori kerja tidak langsung disimpan dalam repositori, tetapi harus disimpan dulu di dalam staging index. Repositori akan diperbarui (update) setelah kita melakukan commit atas file yang ada di dalam staging index.
+5. Staged file adalah file yang ada di dalam staging index.
+6. Unstaged File adalah file yang sudah dimodifikasi tetapi belum masuk ke dalam staging index.
+7. Branch,kondisi dimana setiap repositori memiliki minimal satu cabang (branch) yang disebut master branch. Kita bisa membuat lebih dari satu cabang dalam satu repositori di mana masing-masing cabang memiliki histori sendiri-sendiri. Cabang-cabang ini nantinya bisa digabungkan satu sama lain melalui proses merging.
+8. Merge adalah proses penggabungan sebuah branch lain ke dalam branch di mana kita berada.
+9. Untracked  file adalah file yang tidak pernah dimasukkan ke dalam staging index sehingga file tersebut berada di luar kontrol Git.
+10. Tracked file adalah file yang dikontrol atau dimonitor oleh Git.
+11. HEAD adalah pointer/referensi yang merujuk pada commit terakhir. 
+12. Push adalah proses sinkronisasi antara repositori lokal dengan remote repository. Di dalam proses ini, semua commit terbaru dikirim (upload) ke repositori tujuan. 
+13. Fetch adalah kebalikan dari push. Di dalam proses ini semua commit terbaru di remote repository diunduh (download) ke repositori lokal.
+
+
+
